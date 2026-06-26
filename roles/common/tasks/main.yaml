@@ -4,7 +4,7 @@
 
 - name: common role msg-2
   debug:
-    msg: "Hi, I am from common role MSG-2"
+    msg: "Hi, I am from common role MSG-2 {{ item }}"
 
 - name: common role msg-3
   debug:
@@ -14,7 +14,7 @@
   debug:
     msg: "Hi, I am from common role MSG-4"
 
-- name: call role-2
-  #import_role:
-  include_role: 
-    name: role-3
+# - name: call role-2
+#   #import_role:
+#   include_role: 
+#     name: role-3
